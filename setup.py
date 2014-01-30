@@ -64,7 +64,7 @@ if False:
         man_prefix = '/usr'
 
     data_files.append(tuple(
-        man_prefix + '/share/man/man1/',
+        man_prefix + '/share/man/man1',
         ['man/ansi2html.1'],
     ))
 
@@ -107,8 +107,8 @@ setup(
     test_suite='nose.collector',
     packages=['ansi2html'],
     data_files=[
-        ('share/man/man1/', [
-            'man/ansi2html.1',
+        ('share/man/man1', [
+            'man/ansi2html.1.txt',
             ]),
         ],
     include_package_data=True,
